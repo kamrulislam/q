@@ -4,35 +4,64 @@
 
 
 
-function doSomething() {
+function doSomething(which) {
   var Q = require( "../lib" );
-  var differed = Q();
+  var differed = Q().differ();
   setTimeout( function () {
     var value = 1;
-    console.log( value );
-    differed.resolve( value );
+    console.log( which, value );
+    differed.resolve( {which: which, value:value} );
   }, 1 );
 
   return differed.promise();
 }
 
-doSomething()
-  .then( function ( value ) {
-    value++;
-    console.log( value );
+doSomething('A')
+  .then( function ( result ) {
+    result.value++;
+    console.log(result.which, result.value );
+    return result;
+  }, function(reason) {
+    console.log('error 1', reason);
+  } )
+  .then( function ( result ) {
+    result.value++;
+    console.log(result.which, result.value );
+    return result;
+  }, function(reason) {
+    console.log('error 2', reason);
+  } )
+  .then(function(result){
+    console.log('again', result.which, result.value);
+  }, function(reason){
+    console.log('error 3', reason);
+  });
+
+
+doSomething('B')
+  .then( function ( result ) {
+    result.value++;
+    console.log( result.which, result.value );
     return JSON.parse("<div>uh oh, this is not JSON at all!</div>");
   }, function(reason) {
     console.log('error 1', reason);
   } )
-  .then( function ( value ) {
-    value++;
-    console.log( value );
-    return value;
+  .then( function ( result ) {
+    if (result) {
+      result.value++;
+      console.log( result.which, result.value );
+    }
+
+    return result;
   }, function(reason) {
     console.log('error 2', reason);
   } )
-  .then(function(value){
-    console.log('here', value);
+  .then(function(result){
+    console.log("B 3");
+    if (result) {
+      console.log('here', result.value);
+    }
+
   }, function(reason){
     console.log('error 3', reason);
   });
