@@ -2,10 +2,10 @@
  * Created by kamrulislam on 19/09/2014.
  */
 
+var Q = require( "../lib" );
 
 
 function doSomething(which) {
-  var Q = require( "../lib" );
   var differed = Q().differ();
   setTimeout( function () {
     var value = 1;
@@ -64,4 +64,31 @@ doSomething('B')
 
   }, function(reason){
     console.log('error 3', reason);
+  });
+
+
+var promiseA = function() {
+  var differed = Q();
+  setTimeout(function(){
+    console.log('promiseA');
+    differed.resolve(1);
+  }, 2);
+
+  return differed.promise();
+};
+
+
+var promiseB = function() {
+  var differed = Q();
+  setTimeout(function(){
+    console.log('promiseB');
+    differed.resolve(2);
+  }, 1);
+
+  return differed.promise();
+};
+
+Q().all([promiseA(), promiseB()])
+  .then(function(results){
+     console.log('all resolved', results);
   });
