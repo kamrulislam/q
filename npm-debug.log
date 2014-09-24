@@ -1,0 +1,143 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish', '.' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/kamrulislam/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz
+12 verbose folder .
+13 info prepublish q-ng@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/kamrulislam/.npm/1f1177db-tar.lock
+16 silly lockFile 5e9fc783-20200-0-2789082929957658-tmp-tgz tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz
+17 verbose lock tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz /Users/kamrulislam/.npm/5e9fc783-20200-0-2789082929957658-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 5e9fc783-20200-0-2789082929957658-tmp-tgz tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz
+21 silly lockFile 5e9fc783-20200-0-2789082929957658-tmp-tgz tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz
+22 verbose tar unpack /var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz
+23 silly lockFile 2c50a692-20200-0-2789082929957658-package tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/package
+24 verbose lock tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/package /Users/kamrulislam/.npm/2c50a692-20200-0-2789082929957658-package.lock
+25 silly lockFile 5e9fc783-20200-0-2789082929957658-tmp-tgz tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz
+26 verbose lock tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz /Users/kamrulislam/.npm/5e9fc783-20200-0-2789082929957658-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+30 silly gunzTarPerm extractEntry .npmignore
+31 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+32 silly gunzTarPerm extractEntry Makefile
+33 silly gunzTarPerm extractEntry Readme.md
+34 silly gunzTarPerm extractEntry lib/Q.js
+35 silly gunzTarPerm modified mode [ 'lib/Q.js', 436, 420 ]
+36 silly gunzTarPerm extractEntry lib/index.js
+37 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+38 silly gunzTarPerm extractEntry test/test-spec.js
+39 silly gunzTarPerm extractEntry test/test.js
+40 silly lockFile 2c50a692-20200-0-2789082929957658-package tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/package
+41 silly lockFile 2c50a692-20200-0-2789082929957658-package tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/package
+42 silly lockFile 5e9fc783-20200-0-2789082929957658-tmp-tgz tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz
+43 silly lockFile 5e9fc783-20200-0-2789082929957658-tmp-tgz tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/tmp.tgz
+44 verbose tar pack [ '/Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz',
+44 verbose tar pack   '/var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/package' ]
+45 verbose tarball /Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz
+46 verbose folder /var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/package
+47 silly lockFile 2c50a692-20200-0-2789082929957658-package tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/package
+48 verbose lock tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/package /Users/kamrulislam/.npm/2c50a692-20200-0-2789082929957658-package.lock
+49 silly lockFile 0f2530a9-islam-npm-q-ng-0-0-1-package-tgz tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz
+50 verbose lock tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz /Users/kamrulislam/.npm/0f2530a9-islam-npm-q-ng-0-0-1-package-tgz.lock
+51 silly lockFile 2c50a692-20200-0-2789082929957658-package tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/package
+52 silly lockFile 2c50a692-20200-0-2789082929957658-package tar:///var/folders/pf/xbdl3y7s7b780qzhzgc9jcwh0000gp/T/npm-44764-4fyZUUli/1411597820200-0.2789082929957658/package
+53 silly lockFile 0f2530a9-islam-npm-q-ng-0-0-1-package-tgz tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz
+54 silly lockFile 0f2530a9-islam-npm-q-ng-0-0-1-package-tgz tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz
+55 silly lockFile 774813e5-mrulislam-npm-q-ng-0-0-1-package /Users/kamrulislam/.npm/q-ng/0.0.1/package
+56 verbose lock /Users/kamrulislam/.npm/q-ng/0.0.1/package /Users/kamrulislam/.npm/774813e5-mrulislam-npm-q-ng-0-0-1-package.lock
+57 silly lockFile 774813e5-mrulislam-npm-q-ng-0-0-1-package /Users/kamrulislam/.npm/q-ng/0.0.1/package
+58 silly lockFile 774813e5-mrulislam-npm-q-ng-0-0-1-package /Users/kamrulislam/.npm/q-ng/0.0.1/package
+59 verbose tar unpack /Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz
+60 silly lockFile c347942e-mrulislam-npm-q-ng-0-0-1-package tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package
+61 verbose lock tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package /Users/kamrulislam/.npm/c347942e-mrulislam-npm-q-ng-0-0-1-package.lock
+62 silly lockFile 0f2530a9-islam-npm-q-ng-0-0-1-package-tgz tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz
+63 verbose lock tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz /Users/kamrulislam/.npm/0f2530a9-islam-npm-q-ng-0-0-1-package-tgz.lock
+64 silly gunzTarPerm modes [ '755', '644' ]
+65 silly gunzTarPerm extractEntry package.json
+66 silly gunzTarPerm extractEntry .npmignore
+67 silly gunzTarPerm extractEntry Makefile
+68 silly gunzTarPerm extractEntry Readme.md
+69 silly gunzTarPerm extractEntry lib/Q.js
+70 silly gunzTarPerm extractEntry lib/index.js
+71 silly gunzTarPerm extractEntry test/test-spec.js
+72 silly gunzTarPerm extractEntry test/test.js
+73 silly lockFile c347942e-mrulislam-npm-q-ng-0-0-1-package tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package
+74 silly lockFile c347942e-mrulislam-npm-q-ng-0-0-1-package tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package
+75 silly lockFile 0f2530a9-islam-npm-q-ng-0-0-1-package-tgz tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz
+76 silly lockFile 0f2530a9-islam-npm-q-ng-0-0-1-package-tgz tar:///Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz
+77 verbose chmod /Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz 644
+78 verbose chown /Users/kamrulislam/.npm/q-ng/0.0.1/package.tgz [ 502, 20 ]
+79 silly lockFile 3a52ce78- .
+80 silly lockFile 3a52ce78- .
+81 silly publish { name: 'q-ng',
+81 silly publish   description: 'Inspired by angular\'s $q service, a q/promise library for node',
+81 silly publish   version: '0.0.1',
+81 silly publish   license: 'MIT',
+81 silly publish   bin: { q: './lib' },
+81 silly publish   author:
+81 silly publish    { name: 'Md Kamrul Islam',
+81 silly publish      email: 'kamruli@gmail.com',
+81 silly publish      url: 'http://mdkamrul.com' },
+81 silly publish   main: './lib',
+81 silly publish   repository: { type: 'git', url: 'https://github.com/kamrulislam/q.git' },
+81 silly publish   dependencies: {},
+81 silly publish   devDependencies: { mocha: 'latest', should: 'latest', supertest: 'latest' },
+81 silly publish   scripts: { test: 'make test' },
+81 silly publish   readme: 'Inspired by angular\'s $q service, a q/promise library for node.\n',
+81 silly publish   readmeFilename: 'Readme.md',
+81 silly publish   bugs: { url: 'https://github.com/kamrulislam/q/issues' },
+81 silly publish   homepage: 'https://github.com/kamrulislam/q',
+81 silly publish   _id: 'q-ng@0.0.1',
+81 silly publish   dist: { shasum: 'e3956c0b6907e5226e348ebdf3ba765672764c58' },
+81 silly publish   _from: '.' }
+82 verbose url raw q-ng
+83 verbose url resolving [ 'https://registry.npmjs.org/', './q-ng' ]
+84 verbose url resolved https://registry.npmjs.org/q-ng
+85 info trying registry request attempt 1 at 08:30:20
+86 http PUT https://registry.npmjs.org/q-ng
+87 http 403 https://registry.npmjs.org/q-ng
+88 error publish Failed PUT 403
+89 error Error: forbidden cannot modify pre-existing version: 0.0.1
+89 error old={"name":"q-ng","description":"Inspired by angular's $q service a q/promise library for node","version":"0.0.1","license":"MIT","bin":{"q":"./lib"},"author":{"name":"Md Kamrul Islam","email":"kamruli@gmail.com","url":"http://mdkamrul.com"},"main":"./lib","repository":{"type":"git","url":"https://github.com/kamrulislam/q.git"},"dependencies":{},"devDependencies":{"mocha":"latest","should":"latest","supertest":"latest"},"scripts":{"test":"make test"},"bugs":{"url":"https://github.com/kamrulislam/q/issues"},"homepage":"https://github.com/kamrulislam/q","_id":"q-ng@0.0.1","dist":{"shasum":"587bfd3a5b57cfdbf6e8edd994c107ed84538a22","tarball":"http://registry.npmjs.org/q-ng/-/q-ng-0.0.1.tgz"},"_from":".","_npmVersion":"1.4.3","_npmUser":{"name":"kamrul","email":"kamruli@gmail.com"},"maintainers":[{"name":"kamrul","email":"kamruli@gmail.com"}]}
+89 error new={"name":"q-ng","description":"Inspired by angular's $q service, a q/promise library for node","version":"0.0.1","license":"MIT","bin":{"q":"./lib"},"author":{"name":"Md Kamrul Islam","email":"kamruli@gmail.com","url":"http://mdkamrul.com"},"main":"./lib","repository":{"type":"git","url":"https://github.com/kamrulislam/q.git"},"dependencies":{},"devDependencies":{"mocha":"latest","should":"latest","supertest":"latest"},"scripts":{"test":"make test"},"readme":"Inspired by angular's $q service, a q/promise library for node.\u000a","readmeFilename":"Readme.md","bugs":{"url":"https://github.com/kamrulislam/q/issues"},"homepage":"https://github.com/kamrulislam/q","_id":"q-ng@0.0.1","dist":{"shasum":"e3956c0b6907e5226e348ebdf3ba765672764c58","tarball":"http://registry.npmjs.org/q-ng/-/q-ng-0.0.1.tgz"},"_from":".","_npmVersion":"1.4.3","_npmUser":{"name":"kamrul","email":"kamruli@gmail.com"},"maintainers":[{"name":"kamrul","email":"kamruli@gmail.com"}]}: q-ng
+89 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:237:14)
+89 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+89 error     at Request.EventEmitter.emit (events.js:98:17)
+89 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+89 error     at Request.EventEmitter.emit (events.js:117:20)
+89 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+89 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+89 error     at _stream_readable.js:920:16
+89 error     at process._tickCallback (node.js:415:13)
+90 error If you need help, you may report this *entire* log,
+90 error including the npm and node versions, at:
+90 error     <http://github.com/npm/npm/issues>
+91 error System Darwin 13.3.0
+92 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "."
+93 error cwd /Users/kamrulislam/MyFiles/development/js/my-libraries/q
+94 error node -v v0.10.26
+95 error npm -v 1.4.3
+96 verbose exit [ 1, true ]
