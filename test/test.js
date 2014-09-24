@@ -92,3 +92,9 @@ Q().all([promiseA(), promiseB()])
   .then(function(results){
      console.log('all resolved', results);
   });
+
+
+Q().when(promiseA())
+.then(function(){
+    console.log('when done');
+  });

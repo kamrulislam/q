@@ -3,8 +3,18 @@
   "description": "q/promise library for node",
   "version": "0.0.1",
   "private": true,
+  "license" : "MIT",
+  "bin": {"q" : "./lib"},
+  "author": "Md Kamrul Islam<kamruli@gmail.com> (http://mdkamrul.com)",
+  "main" : "./lib",
   "dependencies": {
   },
   "devDependencies": {
+    "mocha" : "latest",
+    "should" : "latest",
+    "supertest" : "latest"
+  },
+  "scripts": {
+    "test": "make test"
   }
 }
