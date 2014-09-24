@@ -1,1 +1,1 @@
-Inspired by  library of angular, this <b>q</b> library for node has been written.
+Inspired by angular's $q service, a q/promise library for node.

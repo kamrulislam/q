@@ -1,6 +1,6 @@
 {
   "name": "q-ng",
-  "description": "Inspired by angular's $q service a q/promise library for node",
+  "description": "Inspired by angular's $q service, a q/promise library for node",
   "version": "0.0.1",
   "license" : "MIT",
   "bin": {"q" : "./lib"},
