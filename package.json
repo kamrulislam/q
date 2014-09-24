@@ -1,8 +1,7 @@
 {
-  "name": "q",
-  "description": "q/promise library for node",
+  "name": "q-ng",
+  "description": "Inspired by angular's $q service a q/promise library for node",
   "version": "0.0.1",
-  "private": true,
   "license" : "MIT",
   "bin": {"q" : "./lib"},
   "author": "Md Kamrul Islam<kamruli@gmail.com> (http://mdkamrul.com)",
