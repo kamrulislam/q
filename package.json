@@ -7,6 +7,10 @@
   "bin": {"q" : "./lib"},
   "author": "Md Kamrul Islam<kamruli@gmail.com> (http://mdkamrul.com)",
   "main" : "./lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamrulislam/q.git"
+  },
   "dependencies": {
   },
   "devDependencies": {

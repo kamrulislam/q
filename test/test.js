@@ -6,7 +6,7 @@ var Q = require( "../lib" );
 
 
 function doSomething(which) {
-  var differed = Q().differ();
+  var differed = Q.defer();
   setTimeout( function () {
     var value = 1;
     console.log( which, value );
@@ -68,7 +68,7 @@ doSomething('B')
 
 
 var promiseA = function() {
-  var differed = Q();
+  var differed = Q.defer();
   setTimeout(function(){
     console.log('promiseA');
     differed.resolve(1);
@@ -79,7 +79,7 @@ var promiseA = function() {
 
 
 var promiseB = function() {
-  var differed = Q();
+  var differed = Q.defer();
   setTimeout(function(){
     console.log('promiseB');
     differed.resolve(2);
@@ -88,13 +88,13 @@ var promiseB = function() {
   return differed.promise();
 };
 
-Q().all([promiseA(), promiseB()])
+Q.all([promiseA(), promiseB()])
   .then(function(results){
      console.log('all resolved', results);
   });
 
 
-Q().when(promiseA())
+Q.when(promiseA())
 .then(function(){
     console.log('when done');
   });
