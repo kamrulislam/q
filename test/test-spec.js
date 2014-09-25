@@ -6,7 +6,9 @@ var Q = require( "../lib" );
 
 function promiseWithResolveValue( value ) {
   var deferred = Q.defer();
-  deferred.resolve( value );
+  setTimeout(function(){
+    deferred.resolve( value );
+  },10);
   return deferred.promise();
 }
 
