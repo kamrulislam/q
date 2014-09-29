@@ -5,18 +5,18 @@
 var Q = require("../lib");
 
 
-function doSomething(which) {
+function doSomething(which, milliSeconds) {
     var differed = Q.defer();
     setTimeout(function () {
         var value = 1;
         console.log(which, value);
         differed.resolve({which: which, value: value});
-    }, 1);
+    }, milliSeconds || 1);
 
     return differed.promise();
 }
 
-doSomething('A')
+doSomething('A', 20)
     .then(function (result) {
         result.value++;
         console.log(result.which, result.value);
@@ -38,7 +38,7 @@ doSomething('A')
     });
 
 
-doSomething('B')
+doSomething('B', 30)
     .then(function (result) {
         result.value++;
         console.log(result.which, result.value);

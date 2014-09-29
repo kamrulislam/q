@@ -263,23 +263,24 @@ describe("Test 'when' function", function () {
             });
     });
 
-    it("test when with immediate callback", function(done) {
+    it("test when with immediate callback", function (done) {
         var a = 10;
-        Q.when(a, function(value){
+        Q.when(a, function (value) {
             value.should.equal(10);
             done();
         });
     });
 
     var err = new Error('Opps!!');
-    function throwError(){
+
+    function throwError() {
         var deferred = Q.defer();
         deferred.reject(err);
         return deferred.promise();
     }
 
-    it("test when with immediate error", function(done) {
-        Q.when(err, function(value){
+    it("test when with immediate error", function (done) {
+        Q.when(err, function (value) {
             console.log('right', value);
             value.should.equal(err);
             done();
@@ -288,12 +289,59 @@ describe("Test 'when' function", function () {
 
     });
 
-    it("test when with propagated error", function(done) {
-        Q.when(throwError(), function(){
+    it("test when with propagated error", function (done) {
+        Q.when(throwError(), function () {
             console.log('I am unreachable!');
         })
-            .then(null, function(reason){
+            .then(null, function (reason) {
                 reason.should.equal(err);
+                done();
+            });
+
+
+    });
+
+    it.only("more testing with when", function (done) {
+        function justAValue() {
+            var a = 10;
+            // do something and return a value
+            return a;
+
+        }
+
+        var promiseA = function () {
+            var differed = Q.defer();
+            setTimeout(function () {
+                console.log('promiseA');
+                differed.resolve(1);
+            }, 2);
+
+            return differed.promise();
+        };
+
+        // value available at the same promise
+        Q.when(justAValue(), function (value) {
+            value.should.equal(10);
+        });
+        // or in the next promise
+        Q.when(justAValue())
+            .then(function (value) {
+                value.should.equal(10);
+            });
+
+        //same goes with promises
+        // value available at the same promise
+        Q.when(promiseA(), function (value) {
+            //output: resolved with the value  10
+            value.should.equal(1);
+        });
+
+        // or in the next promise
+        Q.when(promiseA())
+            .then(function (value) {
+                value.should.equal(1);
+            })
+            .then(function () {
                 done();
             });
 
